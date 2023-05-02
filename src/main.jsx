@@ -11,6 +11,7 @@ import Home_layout from './Component/Layout/Home_layout/Home_layout';
 import Home from './Component/Pages/Home/Home/Home';
 import Home_details from './Component/Pages/Home/Home_details/Home_details';
 import ErrorPage from './Component/Pages/Errorpage/Errorpage';
+import Blog from './Component/Pages/Home/Home/Blog/Blog';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       path:"/home_layout/:id",
       element:<Home_details></Home_details>,
       loader:({params})=>fetch(`https://assignment-server-tasniasamia.vercel.app/recepie/${params.id}`)
+    },{
+      path:"/Blog",
+      element:<Blog></Blog>,
+
     }
       
     ]
