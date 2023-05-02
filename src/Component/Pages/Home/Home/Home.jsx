@@ -26,9 +26,9 @@ const Home = () => {
       <img src="https://st.depositphotos.com/1518767/4293/i/450/depositphotos_42930411-stock-photo-concentrated-male-chef-garnishing-food.jpg" className="d-block w-100 img-fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-flex  justify-content-center align-items-center">
         <div className='my-auto'>
-        <h1 style={{fontSize:"65px",color:"brown"}}>Baked</h1>
-        <h2 className='text-danger'>no matter how you cook, Yumma has many the recipes</h2>
-        <p style={{color:"white"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.</p>        <Button variant="danger">Learn More</Button>
+        <h1 style={{fontSize:"65px",color:"white"}}>Baked</h1>
+        <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
+        <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.</p>        <Button variant="danger">Learn More</Button>
 
 
         <Container className='my-5'>
@@ -57,10 +57,10 @@ const Home = () => {
     <div className="carousel-item" data-bs-interval="2000">
       <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" className="d-block w-100 img-fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-block ">
-      <h1 style={{fontSize:"65px",color:"brown"}}>Boild</h1>       
-      <h2 className='text-danger'>no matter how you cook, Yumma has many the recipes</h2>
+      <h1 style={{fontSize:"65px",color:"white"}}>Boild</h1>       
+      <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
 
-       <p style={{color:"white"}}className='my-5'>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors. </p>
+       <p style={{color:"white",fontWeight:"bold"}}className='my-5'>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors. </p>
        <Button variant="danger">Learn More</Button>
        <Container className='my-5'>
 
@@ -83,10 +83,10 @@ const Home = () => {
     <div className="carousel-item">
       <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZnxlbnwwfHwwfHw%3D&w=1000&q=80" className="d-block w-100 fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-block text-white">
-      <h1 style={{fontSize:"65px",color:"brown"}}>Streamed</h1>       
-      <h2 className='text-danger'>no matter how you cook, Yumma has many the recipes</h2>
+      <h1 style={{fontSize:"65px",color:"white"}}>Streamed</h1>       
+      <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
 
-        <p style={{color:"white"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.  </p>
+        <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.  </p>
         <Button variant="danger">Learn More</Button>
         <Container className='my-5'>
 
