@@ -37,7 +37,7 @@ const Footer = () => {
 </p>
                 </div>
             </div>
-            <div className='text-center text-white bg-danger py-3'>
+            <div className='text-center text-white bg-danger py-3 'style={{width:"100%"}}>
             Copyright &copy; 2022 yumma, All rights reserved. Powered by MoxCreative. 
             </div>
         </div>

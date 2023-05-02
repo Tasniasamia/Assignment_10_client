@@ -15,7 +15,8 @@ const router = createBrowserRouter([
     element: <Home_layout></Home_layout>,
     children:[{
       path:"/",
-      element:<Home></Home>
+      element:<Home></Home>,
+      loader:()=>fetch('https://assignment-server-tasniasamia.vercel.app/chef'),
     }
       
     ]
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+
     <RouterProvider router={router} />
-  </React.StrictMode>
+
 );

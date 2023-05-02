@@ -1,7 +1,15 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+
+import Row from 'react-bootstrap/Row';
+import './Home.css'
+import { useLoaderData } from 'react-router-dom';
+import Card_item from '../../Card_item/Card_item';
 const Home = () => {
+    const loaddata=useLoaderData();
+    console.log(loaddata);
     return (
         <div>
             <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -61,6 +69,21 @@ However, eating at restaurants too frequently can be costly and may not always b
     <span className="visually-hidden">Next</span>
   </button>
 </div></div>
+
+
+{/* card-start */}
+<Container className='my-5'>
+<div className="row row-cols-1 row-cols-md-3 g-4">
+  {
+    loaddata.map(index=><Card_item propsdata={index} key={index.unic_id}></Card_item>)
+  }
+  </div></Container>
+{/* card_end */}
+
+
+
+
+
 <div className='d-flex justify-content-center align-items-center'>
 <div className='row my-5 d-flex justify-content-center align-items-center'>
     <div className='col-md-5'>
@@ -73,7 +96,7 @@ However, eating at restaurants too frequently can be costly and may not always b
         <p>
             
 
-Tortor scelerisque feugiat nibh ridiculus nisi si. Enim penatibus ac sed primis convallis fames taciti dolor tempor. Faucibus morbi posuere sagittis turpis class vivamus penatibus ornare mollis donec scelerisque.</p>
+Tortor scelerisque feugiat nibh ridiculus nisi si. Enim penatibus ac sed primis convallis fames taciti dolor tempor. Faucibus morbi posuere sagittis turpis className vivamus penatibus ornare mollis donec scelerisque.</p>
 <p>
 
 Tortor scelerisque feugiat nibh ridiculus nisi si. Enim penatibus ac sed primis convallis fames taciti dolor tempor. Faucibus morbi posuere sagittis turpis class vivamus penatibus ornare mollis donec scelerisque.
