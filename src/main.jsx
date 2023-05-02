@@ -12,6 +12,9 @@ import Home from './Component/Pages/Home/Home/Home';
 import Home_details from './Component/Pages/Home/Home_details/Home_details';
 import ErrorPage from './Component/Pages/Errorpage/Errorpage';
 import Blog from './Component/Pages/Home/Home/Blog/Blog';
+import AuthProvider from './Component/AuthProvider/AuthProvider';
+import Resister from './Component/Pages/Resister/Resister';
+import Login from './Component/Pages/Login/Login';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +32,12 @@ const router = createBrowserRouter([
       path:"/Blog",
       element:<Blog></Blog>,
 
+    },{
+      path:"/Resister",
+      element:<Resister></Resister>,
+    },{
+      path:"/Login",
+      element:<Login></Login>,
     }
       
     ]
@@ -36,7 +45,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-
-    <RouterProvider router={router} />
+<AuthProvider>
+    <RouterProvider router={router} /></AuthProvider>
 
 );
