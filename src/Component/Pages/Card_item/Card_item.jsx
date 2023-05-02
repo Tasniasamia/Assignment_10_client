@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
+import { Link } from 'react-router-dom';
 const Card_item = (props) => {
     const propsdatas=props.propsdata;
     console.log(propsdatas);
@@ -24,7 +25,7 @@ const Card_item = (props) => {
         </div>
         <p className='text-center my-3'style={{fontSize:"22px"}}> Cooking can  be a creative and enjoyable hobby, allowing individuals to experiment with different flavors</p>
         <div className='text-center my-4'>
-     <button className='btn btn-primary btn-lg'>View Receipies</button></div>
+     <button className='btn btn-danger btn-lg'><Link to={`/home_layout/${propsdatas.id}`}className='text-decoration-none text-white'> View Receipies</Link></button></div>
 
       </div>
     </div>

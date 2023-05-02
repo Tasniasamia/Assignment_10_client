@@ -2,8 +2,9 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 const Footer = () => {
     return (
-        <div>
-            <div className='row row-cols-1 row-cols-md-4 g-4 p-5 text-white bg-dark'>
+        <div style={{marginTop:"50px",marginBottom:"-200px"}}>
+            <div style={{background:"black"}}>
+            <div className='row row-cols-1 row-cols-md-4 g-4 p-5 text-white   '>
                 <div className='col'>
                     <div style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}><i className="fa-solid fa-bowl-food"></i>Yumma</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iusto totam, quibusdam, libero blanditiis impedit alias ducimus cupiditate officia facilis tempore eum illum maiores sunt, provident iure fugit voluptas culpa.</p>
@@ -39,7 +40,7 @@ const Footer = () => {
             </div>
             <div className='text-center text-white bg-danger py-3 'style={{width:"100%"}}>
             Copyright &copy; 2022 yumma, All rights reserved. Powered by MoxCreative. 
-            </div>
+            </div></div>
         </div>
     );
 };

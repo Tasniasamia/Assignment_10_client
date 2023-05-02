@@ -68,7 +68,7 @@ However, eating at restaurants too frequently can be costly and may not always b
 </div></div> */}
         <div>
             <Outlet></Outlet>
-        </div>
+    </div>
         <Footer></Footer>
        </div>
        

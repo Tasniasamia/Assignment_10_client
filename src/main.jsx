@@ -9,6 +9,7 @@ import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home_layout from './Component/Layout/Home_layout/Home_layout';
 import Home from './Component/Pages/Home/Home/Home';
+import Home_details from './Component/Pages/Home/Home_details/Home_details';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       path:"/",
       element:<Home></Home>,
       loader:()=>fetch('https://assignment-server-tasniasamia.vercel.app/chef'),
+    },{
+      path:"/home_layout/:id",
+      element:<Home_details></Home_details>,
+      loader:({params})=>fetch(`https://assignment-server-tasniasamia.vercel.app/recepie/${params.id}`)
     }
       
     ]
