@@ -15,7 +15,7 @@ function Header() {
           <Nav className="me-auto"id="navbar2">
             <Link to="/">Home</Link>
             <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
+         
 
           </Nav>
           <Nav>
