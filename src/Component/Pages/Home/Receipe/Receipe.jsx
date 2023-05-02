@@ -55,7 +55,7 @@ className='me-2'
 />{propsdata.rating}
         </div>
         <div onClick={handlecheck}>
-            <button className='btn btn-primary'disabled={accept}><i className="fa-solid fa-star text-white me-2"></i>Like</button>
+            <button className='btn btn-primary'disabled={accept}><i className="fa-solid fa-star text-white me-2"></i>Favourite</button>
             </div>
         </div>
 
