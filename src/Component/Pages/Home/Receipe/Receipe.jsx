@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rating from 'react-rating';
 import {AiFillStar,AiOutlineStar} from "react-icons/ai";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Receipe = (prop) => {
     const propsdata=prop.propdata;
+    const [accept,setAccept]=useState(false);
+    function handlecheck(){
+       
+        setAccept(true);
+      
+            return  toast('You have Liked');
+        
+       
+    }
+   
+
     return (
       
               <div className="col">
@@ -28,7 +41,7 @@ const Receipe = (prop) => {
 />{propsdata.rating}
         </div>   */}
       </div>
-      <div className='p-3'>
+      <div className='p-3 d-flex justify-content-between'>
       <div>
         <Rating
   // eslint-disable-next-line react/prop-types
@@ -41,9 +54,10 @@ const Receipe = (prop) => {
 className='me-2'
 />{propsdata.rating}
         </div>
+        <div onClick={handlecheck}><i className="fa-solid fa-thumbs-up"disabled={accept}></i></div>
         </div>
 
-        
+
     </div>
         </div>
     );

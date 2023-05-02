@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom';
 import './Home_layout.css'
 import Button from 'react-bootstrap/Button';
 import Footer from '../../Pages/Shared/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home_layout = () => {
     return (
      
@@ -70,6 +72,7 @@ However, eating at restaurants too frequently can be costly and may not always b
             <Outlet></Outlet>
     </div>
         <Footer></Footer>
+        <ToastContainer />
        </div>
        
     );
