@@ -50,13 +50,13 @@ const Blog = () => {
 
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingfour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
       What is a custom hook, and why will you create a custom hook?
       </button>
     </h2>
     <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
       <div class="accordion-body">
-        
+      The hooks that we create in React are custom hooks.When we want to add a custom feature to React we create a custom hook and use.
       </div>
     </div>
   </div>
