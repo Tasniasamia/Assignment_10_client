@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../../Pages/Shared/Header/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigation } from 'react-router-dom';
 import './Home_layout.css'
 import Button from 'react-bootstrap/Button';
 import Footer from '../../Pages/Shared/Footer/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loadingbtn from '../../Pages/Loading/Loading';
 const Home_layout = () => {
+    const loadingbtn=useNavigation();
     return (
      
        <div >
@@ -72,6 +74,7 @@ However, eating at restaurants too frequently can be costly and may not always b
             <Outlet></Outlet>
     </div>
         <Footer></Footer>
+        {loadingbtn.state=="loading"?<Loadingbtn/>:""}
         <ToastContainer />
        </div>
        

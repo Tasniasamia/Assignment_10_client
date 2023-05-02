@@ -10,10 +10,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home_layout from './Component/Layout/Home_layout/Home_layout';
 import Home from './Component/Pages/Home/Home/Home';
 import Home_details from './Component/Pages/Home/Home_details/Home_details';
+import ErrorPage from './Component/Pages/Errorpage/Errorpage';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home_layout></Home_layout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[{
       path:"/",
       element:<Home></Home>,
