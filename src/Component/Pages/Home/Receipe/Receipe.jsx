@@ -10,7 +10,7 @@ const Receipe = (prop) => {
        
         setAccept(true);
       
-            return  toast('You have Liked');
+         {accept?"":toast('You have Liked')}
         
        
     }

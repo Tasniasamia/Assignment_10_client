@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import Activestyle from '../Active/Active';
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="white"className=''>
@@ -13,8 +14,8 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"id="navbar2">
-            <Link to="/">Home</Link>
-            <Link to="/Blog">Blog</Link>
+            <Activestyle to="/"active>Home</Activestyle>
+            <Activestyle to="/Blog">Blog</Activestyle>
          
 
           </Nav>

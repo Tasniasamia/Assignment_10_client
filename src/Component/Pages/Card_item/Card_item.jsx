@@ -25,7 +25,7 @@ const Card_item = (props) => {
         </div>
         
         <div className='text-center my-4'>
-     <button className='btn btn-danger btn-lg'><Link to={`/home_layout/${propsdatas.id}`}className='text-decoration-none text-white'> View Receipies</Link></button></div>
+     <button className='btn btn-danger btn-lg'><Link to={`/home_layout/${propsdatas.id}`}className='text-decoration-none text-white'> View Recepies</Link></button></div>
 
       </div>
     </div>
