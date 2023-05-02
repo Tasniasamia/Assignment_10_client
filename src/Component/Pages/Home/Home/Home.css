@@ -1,29 +1,6 @@
-.section-bar{
-    margin-top: 150px;
+.carousel-caption{
+    margin-bottom:100px;
 }
-.slider{
-    margin-top: 150px;
-}
-.slid1{
-    background: url('images/Rectangle 7.png'),url('images/slider-1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 350px;
-}
-.slid2{
-    background: url('images/Rectangle 7.png'),url('images/slider-2.jpg');
-    height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
- 
-}
-.slid3{
-    background: url('images/Rectangle 7.png'),url('images/slider-3.jpg');
-    height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
-   
-}
-.carousel-item{
-    border-radius: 8px;
+.carousel-control-prev-icon{
+    color:white;
 }
