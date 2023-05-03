@@ -49,11 +49,19 @@ function Login() {
       <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
       <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" className="btn btn-primary">Login</button>
+    <div className='text-center bg-primary p-1 rounded'>
+    <input type="submit" className="bg-primary text-white"value="Sign in"style={{border:"0",boxShadow:"0"}}/></div>
     <p className='text-danger'>{error}</p>
     <p className='text-success'>{success}</p>
     <p>Do havn't a account? please <Link to="/Resister">Resister</Link>   </p>
-  </form></div>
+  </form>
+ 
+    
+  <button className='btn btn-outline-success me-2'onClick={receivedata.googlesign}><i className="fa-brands fa-google me-1"></i>Login With Google</button>
+  
+ 
+  <button className='btn btn-outline-secondary'onClick={receivedata.github}><i className="fa-brands fa-github me-2"></i>Login With Github</button></div>
+ 
   </div>
   );
 }

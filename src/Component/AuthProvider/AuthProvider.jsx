@@ -1,16 +1,64 @@
 /* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useEffect, useState } from 'react';
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,sendEmailVerification,onAuthStateChanged,updateProfile } from "firebase/auth";
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,sendEmailVerification,onAuthStateChanged,updateProfile, signInWithPopup, GoogleAuthProvider,GithubAuthProvider } from "firebase/auth";
 import app from '../Firebase/Firebase_config';
 
 export const authdata=createContext(null);
 const AuthProvider = ({children}) => {
+    const provider2 = new GithubAuthProvider();
+    //github
+    const github=()=>{
+        signInWithPopup(auth, provider2)
+  .then((result) => {
+    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GithubAuthProvider.credentialFromError(error);
+    // ...
+  });
+    }
     const[user,setUser]=useState(null);
     const[loading,setLoading]=useState(true);
 
     const data="Tasnia";
     
 const auth = getAuth(app);
+
+const provider = new GoogleAuthProvider();
+//sign by google
+const googlesign=()=>{
+    signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+}
 //resister
 const resister=(email,password)=>{
     setLoading(true);
@@ -69,7 +117,7 @@ setLoading(true);
       })
 }
     const Authvaluedata={
-        data,resister,signin,signout,user,displayname,setUser
+        data,resister,signin,signout,user,displayname,setUser,googlesign,github
     }
     return (
         <div>
