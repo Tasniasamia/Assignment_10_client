@@ -17,7 +17,9 @@ const Card_item = (props) => {
   
     
     <div>
-    <LazyLoad height={200} once>
+    <LazyLoad height={200}onContentVisible={() => {
+        console.log("loaded!");
+      }} once>
     <img src={propsdatas.chef_picture
 }  className="card-img-top img-fluid"style={{height:"200px"}}  alt="chef_profile"/>    
 </LazyLoad>
