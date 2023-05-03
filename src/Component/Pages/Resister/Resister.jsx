@@ -14,6 +14,13 @@ const [accept,setAccept]=useState(false);
         const email=event.target.email.value;
         const password=event.target.password.value;
         const photo=event.target.photo.value;
+        if(email.length==0 && password.length==0){
+            setError("please fill up ");
+        }
+        else if(password.length<6){
+            setError("Password length is less than 6");
+        }
+        
         console.log(email,password);
         resister(email,password)
         .then((userCredential) => {
@@ -32,7 +39,10 @@ const [accept,setAccept]=useState(false);
               // An error occurred
               // ...
             });
-
+           event.target.name.value="";
+          event.target.email.value="";
+          event.target.password.value="";
+           event.target.photo.value="";
            
           })
           .catch((error) => {

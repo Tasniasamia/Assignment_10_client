@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { authdata } from '../AuthProvider/AuthProvider';
 import { Navigate, useLocation } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 const Private_route = ({children}) => {
     const {user,loading}=useContext(authdata);
@@ -12,7 +13,7 @@ const Private_route = ({children}) => {
         return children
     }
     if(loading){
-        return <div>Loading....</div>
+        return <ToastContainer/>
     }
     return <Navigate to="/Login"state={{from:location}}></Navigate>
 };

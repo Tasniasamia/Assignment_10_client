@@ -37,7 +37,8 @@ function Login() {
             setSuccess("User has submited successfully");
             setError('');
             navigate(from);
-         
+            event.target.email.value="";
+            event.target.password.value="";
           })
           .catch((error) => {
             const errorCode = error.code;
@@ -59,6 +60,7 @@ function githubsignin(){
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
+        setError(errorMessage);
        
         // ...
       });
@@ -78,6 +80,7 @@ function google(){
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
+        setError('');
 
         // ...
       });
