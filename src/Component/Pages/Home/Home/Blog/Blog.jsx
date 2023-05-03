@@ -27,8 +27,7 @@ const Blog = () => {
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
       <div class="accordion-body">
-      NodeJS  is Open Source Server.Express create Rest API of Node Js.Node js is powerfull than Express Js.Express js is a version framework of nodejs.Nodejs worked vanila.we can't use node js without express js.
-
+      When we send props to any React component, we can use prop-types to check its type.With Test.propType, inside the second bracket, put the name of the props provider, then clone, then propaptps, then type.If correct then no error will be given.Test to check what type it Test.Defaultprops then single then bracket
 
       </div>
     </div>
@@ -41,7 +40,7 @@ const Blog = () => {
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      NodeJS  is Open Source Server.Express create Rest API of Node Js.Node js is powerfull than Express Js.Express js is a version framework of nodejs.Nodejs worked vanila.we can't use node js without express js.
       </div>
     </div>
   </div>
