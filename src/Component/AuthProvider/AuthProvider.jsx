@@ -5,9 +5,12 @@ import app from '../Firebase/Firebase_config';
 
 export const authdata=createContext(null);
 const AuthProvider = ({children}) => {
+    const[user,setUser]=useState(null);
+    const[loading,setLoading]=useState(true);
     const provider2 = new GithubAuthProvider();
     //github
     const github=()=>{
+        setLoading(true);
         signInWithPopup(auth, provider2)
   .then((result) => {
     // This gives you a GitHub Access Token. You can use it to access the GitHub API.
@@ -29,8 +32,7 @@ const AuthProvider = ({children}) => {
     // ...
   });
     }
-    const[user,setUser]=useState(null);
-    const[loading,setLoading]=useState(true);
+ 
 
     const data="Tasnia";
     
@@ -39,6 +41,7 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 //sign by google
 const googlesign=()=>{
+    setLoading(true);
     signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.

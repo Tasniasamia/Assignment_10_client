@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       loader:()=>fetch('https://assignment-server-tasniasamia.vercel.app/chef'),
     },{
       path:"/home_layout/:id",
-      element:<Private_route> <Home_details></Home_details>,</Private_route>,
+      element:<Private_route> <Home_details></Home_details></Private_route>,
       loader:({params})=>fetch(`https://assignment-server-tasniasamia.vercel.app/recepie/${params.id}`)
     },{
       path:"/Blog",
