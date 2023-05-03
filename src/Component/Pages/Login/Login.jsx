@@ -68,6 +68,7 @@ function google(){
     console.log(from);
     receivedata.googlesign().then((result) => {
          const user = result.user;
+         console.log(user);
         receivedata.setUser(user);
         navigate(from);
         console.log(from);

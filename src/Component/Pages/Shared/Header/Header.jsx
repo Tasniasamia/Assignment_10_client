@@ -26,7 +26,7 @@ function Header() {
             <div className='d-flex justify-content-center align-items-center mx-auto'>
             <div>
             {
-                receivedata.user && <img src={receivedata.user.photoURL} alt="profile_imag"className='rounded-circle me-2'style={{height:"40px",width:"40px"}}/>
+                receivedata.user && <img src={receivedata.user.photoURL} alt="profile_imag"className='rounded-circle me-2'style={{height:"40px",width:"40px"}}data-toggle="tooltip" data-placement="top" title={receivedata.user.displayName}/>
             }</div>
             <div>
          
