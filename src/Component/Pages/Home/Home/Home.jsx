@@ -148,7 +148,7 @@ const Home = () => {
 
 
 
-
+<h2 className='text-center my-5'style={{color:"brown"}}>Meet Our Chefs</h2>
 
 {/* card-start */}
 <Container className='my-5'>
