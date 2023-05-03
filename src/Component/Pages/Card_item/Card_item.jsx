@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-
+import LazyLoad from 'react-lazy-load';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -14,8 +14,14 @@ const Card_item = (props) => {
           
           <div className="col">
     <div className="card h-100">
-      <img src={propsdatas.chef_picture
-} className="card-img-top img-fluid"style={{height:"300px"}} alt="chef_profile"/>
+  
+    
+    <div>
+    {/* <LazyLoad  height={762} width={400} threshold={0.95}> */}
+    <img src={propsdatas.chef_picture
+} loading="lazy" className="card-img-top img-fluid"style={{height:"300px"}}  alt="chef_profile"/>    
+{/* </LazyLoad> */}
+  </div>
       <div className="card-body">
         <h5 className="card-title text-danger"style={{fontWeight:"bold",fontSize:"40px"}}>{propsdatas.chef_name}</h5>
         <div className=''style={{fontSize:"17px"}}>
