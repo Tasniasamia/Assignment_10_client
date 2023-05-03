@@ -7,7 +7,7 @@ function Resister() {
     const [success,setSuccess]=useState(null);
     const [error,setError]=useState(null);
 const [accept,setAccept]=useState(false);
-    const {resister,displayname}=useContext(authdata);
+    const {resister,displayname,signout}=useContext(authdata);
     function Resister(event){
         event.preventDefault();
         const name=event.target.name.value;
@@ -21,6 +21,7 @@ const [accept,setAccept]=useState(false);
             const user = userCredential.user;
             console.log(user);
             setSuccess("User has submited successfully");
+            signout();
             setError("");
       
         displayname(name,photo)

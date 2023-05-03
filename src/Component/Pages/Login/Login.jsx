@@ -11,6 +11,18 @@ function Login() {
     let from=location.state?.from?.pathname || "/";
     console.log(location)
     const navigate=useNavigate();
+
+    // function  github2 (){
+    //     receivedata.github()
+   
+    // }
+        
+    // function googlesignin(){
+    //     receivedata.googlesign()
+    
+       
+    //        }   
+
     function signin(event){
         event.preventDefault();
 
@@ -35,6 +47,41 @@ function Login() {
           });
 
     }
+
+function githubsignin(){
+    receivedata.github().then((result) => {
+        const user = result.user;
+        receivedata.setUser(user);
+        navigate(from);
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+       
+        // ...
+      });
+}
+   
+function google(){
+    console.log(from);
+    receivedata.googlesign().then((result) => {
+         const user = result.user;
+        receivedata.setUser(user);
+        navigate(from);
+        console.log(from);
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        // ...
+      });
+}
+   
   return (
     <div className='d-flex justify-content-center'>
     <div>
@@ -61,13 +108,13 @@ function Login() {
   </form>
  
     
-  <button className='btn btn-outline-success me-2'onClick={receivedata.googlesign}><i className="fa-brands fa-google me-1"></i>Login With Google</button>
+  <button className='btn btn-outline-success me-2'onClick={google}><i className="fa-brands fa-google me-1"></i>Login With Google</button>
   
  
-  <button className='btn btn-outline-secondary'onClick={receivedata.github}><i className="fa-brands fa-github me-2"></i>Login With Github</button></div>
+  <button className='btn btn-outline-secondary'onClick={githubsignin}><i className="fa-brands fa-github me-2"></i>Login With Github</button></div>
  
   </div>
   );
-}
+  }
 
 export default Login;
