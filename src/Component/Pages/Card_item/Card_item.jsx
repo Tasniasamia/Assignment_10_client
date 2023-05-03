@@ -17,10 +17,10 @@ const Card_item = (props) => {
   
     
     <div>
-    {/* <LazyLoad  height={762} width={400} threshold={0.95}> */}
+    <LazyLoad height={200} once>
     <img src={propsdatas.chef_picture
-} loading="lazy" className="card-img-top img-fluid"style={{height:"300px"}}  alt="chef_profile"/>    
-{/* </LazyLoad> */}
+}  className="card-img-top img-fluid"style={{height:"200px"}}  alt="chef_profile"/>    
+</LazyLoad>
   </div>
       <div className="card-body">
         <h5 className="card-title text-danger"style={{fontWeight:"bold",fontSize:"40px"}}>{propsdatas.chef_name}</h5>

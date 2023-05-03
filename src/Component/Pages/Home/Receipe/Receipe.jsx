@@ -3,6 +3,7 @@ import Rating from 'react-rating';
 import {AiFillStar,AiOutlineStar} from "react-icons/ai";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LazyLoad from 'react-lazy-load';
 const Receipe = (prop) => {
     const propsdata=prop.propdata;
     const [accept,setAccept]=useState(false);
@@ -20,7 +21,8 @@ const Receipe = (prop) => {
       
               <div className="col">
     <div className="card h-100">
-      <img src={propsdata.image} className="card-img-top img-fluid"style={{height:"300px"}} alt="chef_profile"/>
+    <LazyLoad height={200} once>
+      <img src={propsdata.image} className="card-img-top img-fluid"style={{height:"200px"}} alt="chef_profile"/></LazyLoad>
       <div className="card-body p-3">
         <h5 className="card-title text-danger"style={{fontWeight:"bold"}}>{propsdata.name}</h5>
   <div>
