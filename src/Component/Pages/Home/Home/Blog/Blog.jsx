@@ -1,12 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import ReactDOM from "react-dom";
+import Pdf from "react-to-pdf";
 
+const ref = React.createRef();
 const Blog = () => {
     return (
         <div>
-            <div>
+            <Container className='text-end'>
+              <Pdf targetRef={ref} filename="code-example.pdf">
+        {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary'>Download Pdf</button>}
+      </Pdf></Container>
+            <div  className=''>
                 <Container className='my-5'>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion"ref={ref} id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
