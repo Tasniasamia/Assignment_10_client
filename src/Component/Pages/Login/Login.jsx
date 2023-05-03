@@ -7,7 +7,10 @@ function Login() {
     const receivedata=useContext(authdata);
     const [success,setSuccess]=useState(null);
     const [error,setError]=useState(null);
-   
+    const location=useLocation();
+    let from=location.state?.from?.pathname || "/"
+    console.log(location)
+    const navigate=useNavigate();
     function signin(event){
         event.preventDefault();
 
@@ -21,6 +24,7 @@ function Login() {
             receivedata.setUser(user);
             setSuccess("User has submited successfully");
             setError('');
+            navigate(from);
          
           })
           .catch((error) => {

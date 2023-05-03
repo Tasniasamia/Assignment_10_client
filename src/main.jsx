@@ -15,6 +15,7 @@ import Blog from './Component/Pages/Home/Home/Blog/Blog';
 import AuthProvider from './Component/AuthProvider/AuthProvider';
 import Resister from './Component/Pages/Resister/Resister';
 import Login from './Component/Pages/Login/Login';
+import Private_route from './Component/Privateroute/Privateroute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       loader:()=>fetch('https://assignment-server-tasniasamia.vercel.app/chef'),
     },{
       path:"/home_layout/:id",
-      element:<Home_details></Home_details>,
+      element:<Private_route> <Home_details></Home_details>,</Private_route>,
       loader:({params})=>fetch(`https://assignment-server-tasniasamia.vercel.app/recepie/${params.id}`)
     },{
       path:"/Blog",
