@@ -24,9 +24,13 @@ const Home = () => {
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
       <img src="https://st.depositphotos.com/1518767/4293/i/450/depositphotos_42930411-stock-photo-concentrated-male-chef-garnishing-food.jpg" className="d-block w-100 img-fluid" alt="..."/>
-      <div className="carousel-caption d-none d-md-flex  justify-content-center align-items-center">
+    
+      <div className="carousel-caption d-md-flex  justify-content-center align-items-center">
         <div className='my-auto'>
+           
         <h1 style={{fontSize:"65px",color:"white"}}>Baked</h1>
+       
+        <div className=' d-none d-md-block'>
         <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
         <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.</p>        <Button variant="danger">Learn More</Button>
 
@@ -46,7 +50,7 @@ const Home = () => {
     <div className='p-3'>
     <img className='img-fluid rounded'src="https://as1.ftcdn.net/v2/jpg/03/52/93/40/1000_F_352934068_tOxY9HRQULtSPob74c1OhySe3CStiFiR.jpg" alt="foods" />
     </div>
-</div></Container>
+</div></Container></div>
 
 
 
@@ -56,38 +60,16 @@ const Home = () => {
     </div>
     <div className="carousel-item" data-bs-interval="2000">
       <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" className="d-block w-100 img-fluid" alt="..."/>
-      <div className="carousel-caption d-none d-md-block ">
-      <h1 style={{fontSize:"65px",color:"white"}}>Boild</h1>       
-      <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
+      <div className="carousel-caption d-md-flex  justify-content-center align-items-center">
+        <div className='my-auto'>
+           
+        <h1 style={{fontSize:"65px",color:"white"}}>Boild</h1>
+       
+        <div className=' d-none d-md-block'>
+        <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
+        <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.</p>        <Button variant="danger">Learn More</Button>
 
-       <p style={{color:"white",fontWeight:"bold"}}className='my-5'>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors. </p>
-       <Button variant="danger">Learn More</Button>
-       <Container className='my-5'>
 
-<div className='d-md-flex justify-content-evenly align-items-center '>
-    <div className='p-3'>
-<img className='img-fluid rounded' src="https://as1.ftcdn.net/v2/jpg/00/86/55/48/1000_F_86554865_TH1mGC85z9BYsQwNwvF2vQgsoNfgLqUf.jpg" alt="foods" />
-    </div>
-    <div className='p-3'>
-    <img  className='img-fluid rounded'src="https://img.freepik.com/free-photo/spicy-hot-pot_74190-4240.jpg?w=1060&t=st=1682981526~exp=1682982126~hmac=30cf99fc527bc418112a2cd72d689234147b8af5288de42546d5863906608704" alt="foods" />
-    </div>
-    <div className='p-3'>
-    <img className='img-fluid rounded'src="https://as2.ftcdn.net/v2/jpg/01/86/01/59/1000_F_186015989_8YtUXBlmZDLPWmcIyr6NriY0ErP3O08N.jpg" alt="foods" />
-    </div>
-    <div className='p-3'>
-    <img className='img-fluid rounded'src="https://as1.ftcdn.net/v2/jpg/03/52/93/40/1000_F_352934068_tOxY9HRQULtSPob74c1OhySe3CStiFiR.jpg" alt="foods" />
-    </div>
-</div></Container>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZnxlbnwwfHwwfHw%3D&w=1000&q=80" className="d-block w-100 fluid" alt="..."/>
-      <div className="carousel-caption d-none d-md-block text-white">
-      <h1 style={{fontSize:"65px",color:"white"}}>Streamed</h1>       
-      <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
-
-        <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.  </p>
-        <Button variant="danger">Learn More</Button>
         <Container className='my-5'>
 
 <div className='d-md-flex justify-content-evenly align-items-center '>
@@ -103,7 +85,47 @@ const Home = () => {
     <div className='p-3'>
     <img className='img-fluid rounded'src="https://as1.ftcdn.net/v2/jpg/03/52/93/40/1000_F_352934068_tOxY9HRQULtSPob74c1OhySe3CStiFiR.jpg" alt="foods" />
     </div>
-</div></Container>
+</div></Container></div>
+
+
+
+
+</div>
+      </div>
+    </div>
+    <div className="carousel-item">
+      <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZnxlbnwwfHwwfHw%3D&w=1000&q=80" className="d-block w-100 fluid" alt="..."/>
+      <div className="carousel-caption d-md-flex  justify-content-center align-items-center">
+        <div className='my-auto'>
+           
+        <h1 style={{fontSize:"65px",color:"white"}}>Streamed</h1>
+       
+        <div className=' d-none d-md-block'>
+        <h2 className='text-danger'style={{fontWeight:"bold"}}>no matter how you cook, Yumma has many the recipes</h2>
+        <p style={{color:"white",fontWeight:"bold"}}>Restaurant food recipes are recipes of dishes that are commonly served in restaurants. These dishes can vary greatly depending on the type of restaurant and the cuisine it specializes in. Restaurant food recipes can be complex, using a variety of ingredients and cooking techniques to create unique and delicious flavors.</p>        <Button variant="danger">Learn More</Button>
+
+
+        <Container className='my-5'>
+
+<div className='d-md-flex justify-content-evenly align-items-center '>
+    <div className='p-3'>
+<img className='img-fluid rounded' src="https://as1.ftcdn.net/v2/jpg/00/86/55/48/1000_F_86554865_TH1mGC85z9BYsQwNwvF2vQgsoNfgLqUf.jpg" alt="foods" />
+    </div>
+    <div className='p-3'>
+    <img  className='img-fluid rounded'src="https://img.freepik.com/free-photo/spicy-hot-pot_74190-4240.jpg?w=1060&t=st=1682981526~exp=1682982126~hmac=30cf99fc527bc418112a2cd72d689234147b8af5288de42546d5863906608704" alt="foods" />
+    </div>
+    <div className='p-3'>
+    <img className='img-fluid rounded'src="https://as2.ftcdn.net/v2/jpg/01/86/01/59/1000_F_186015989_8YtUXBlmZDLPWmcIyr6NriY0ErP3O08N.jpg" alt="foods" />
+    </div>
+    <div className='p-3'>
+    <img className='img-fluid rounded'src="https://as1.ftcdn.net/v2/jpg/03/52/93/40/1000_F_352934068_tOxY9HRQULtSPob74c1OhySe3CStiFiR.jpg" alt="foods" />
+    </div>
+</div></Container></div>
+
+
+
+
+</div>
       </div>
     </div>
   </div>
