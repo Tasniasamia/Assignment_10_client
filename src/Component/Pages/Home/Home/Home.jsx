@@ -5,9 +5,15 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import './Home.css'
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import Card_item from '../../Card_item/Card_item';
+import Loadingbtn from '../../Loading/Loading';
 const Home = () => {
+    const navitgation2=useNavigation();
+    if(navitgation2.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
+   
     const loaddata=useLoaderData();
     console.log(loaddata);
     return (

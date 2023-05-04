@@ -1,9 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import Receipe from '../Receipe/Receipe';
 
 const Home_details = () => {
+    const navitgation2=useNavigation();
+    if(navitgation2.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
+   
     const receivedata=useLoaderData();
     console.log(receivedata);
     return (
