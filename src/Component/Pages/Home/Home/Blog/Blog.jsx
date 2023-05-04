@@ -8,8 +8,8 @@ const Blog = () => {
     return (
       <div>
         <div>
-            <Container className='text-center'>
-              <Pdf targetRef={ref} filename="code-example.pdf">
+            <Container >
+              <Pdf targetRef={ref} filename="code-example.pdf"className='text-center'>
         {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary'>Download PDF</button>}
       </Pdf></Container>
             <div  className=''>
