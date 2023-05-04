@@ -2,8 +2,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 const Footer = () => {
     return (
-        <div style={{marginTop:"50px",marginBottom:"-200px"}}>
-            <div style={{background:"black"}}className='mx-auto overflow-hidden'>
+        <div style={{marginTop:"50px"}}>
+            <div style={{background:"black"}}className='mx-auto '>
             <div className='row row-cols-1 row-cols-md-4 g-4 p-5 text-white   '>
                 <div className='col'>
                     <div style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}><i className="fa-solid fa-bowl-food"></i>Yumma</div>

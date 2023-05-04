@@ -13,7 +13,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="white"className=''>
       <Container>
-        <Navbar.Brand to="/"style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}><i className="fa-solid fa-bowl-food"></i>Yumma</Navbar.Brand>
+        <Navbar.Brand ><Link to="/"style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}className='text-decoration-none'> <i className="fa-solid fa-bowl-food"></i>Yumma</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"id="navbar2">

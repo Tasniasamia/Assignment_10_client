@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigation } from 'react-router-dom';
 import { authdata } from '../../AuthProvider/AuthProvider';
 
 function Resister() {
+  
     const [success,setSuccess]=useState(null);
     const [error,setError]=useState(null);
 const [accept,setAccept]=useState(false);

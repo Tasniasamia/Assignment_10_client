@@ -6,6 +6,7 @@ import Pdf from "react-to-pdf";
 const ref = React.createRef();
 const Blog = () => {
     return (
+      <div>
         <div>
             <Container classNameName='text-end'>
               <Pdf targetRef={ref} filename="code-example.pdf">
@@ -77,7 +78,7 @@ const Blog = () => {
 
 </div>
 </Container>    </div>
-        </div>
+        </div></div>
     );
 };
 
