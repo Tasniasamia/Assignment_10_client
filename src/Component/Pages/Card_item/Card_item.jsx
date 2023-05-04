@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
+import man from '../../../assets/man.png';
 const Card_item = (props) => {
     const propsdatas = props.propsdata;
     console.log(propsdatas);
@@ -20,8 +21,7 @@ const Card_item = (props) => {
                         <LazyLoad height={200} onContentVisible={() => {
                             console.log("loaded!");
                         }} once>
-                            <img src={propsdatas.chef_picture
-                            } className="card-img-top img-fluid" style={{ height: "200px" }} alt="chef_profile" />
+                            <img src={propsdatas.chef_picture} className="card-img-top img-fluid" style={{ height: "200px" }} alt="chef_profile" />
                         </LazyLoad>
                     </div>
                     <div className="card-body">

@@ -1,20 +1,25 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import ReactDOM from "react-dom";
+import { useNavigation } from 'react-router-dom';
 import Pdf from "react-to-pdf";
 
 const ref = React.createRef();
 const Blog = () => {
+  const navitgation2=useNavigation();
+  if(navitgation2.state=="loading"){
+      return <Loadingbtn></Loadingbtn>
+  }
     return (
       <div>
         <div>
-            <Container >
-              <Pdf targetRef={ref} filename="code-example.pdf"className='text-center'>
+            <Container className='text-center'>
+              <Pdf targetRef={ref} filename="code-example.pdf">
         {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary'>Download PDF</button>}
       </Pdf></Container>
-            <div  className=''>
+            <div  >
                 <Container className='my-5'>
-                <div class="accordion"ref={ref} id="accordionPanelsStayOpenExample">
+                <div className="accordion"ref={ref} id="accordionPanelsStayOpenExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="panelsStayOpen-headingOne">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">

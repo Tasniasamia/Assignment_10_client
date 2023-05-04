@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loadingbtn from '../../Pages/Loading/Loading';
 const Home_layout = () => {
-    const loadingbtn=useNavigation();
+    // const loadingbtn=useNavigation();
     return (
      
        <div style={{overflowX:"hidden"}}>
@@ -73,9 +73,10 @@ However, eating at restaurants too frequently can be costly and may not always b
         <div>
             <Outlet></Outlet>
     </div>
-        <Footer></Footer>
-        {loadingbtn.state=="loading"?<Loadingbtn/>:""}
+    {/* {loadingbtn.state=="loading"?<Loadingbtn/>:""} */}
         <ToastContainer />
+        <Footer></Footer>
+       
        </div>
        
     );
