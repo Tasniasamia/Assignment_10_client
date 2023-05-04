@@ -8,16 +8,16 @@ const Blog = () => {
     return (
       <div>
         <div>
-            <Container classNameName='text-end'>
+            <Container className='text-center'>
               <Pdf targetRef={ref} filename="code-example.pdf">
-        {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary'>Download Pdf</button>}
+        {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary'>Download PDF</button>}
       </Pdf></Container>
             <div  className=''>
                 <Container className='my-5'>
                 <div class="accordion"ref={ref} id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="panelsStayOpen-headingOne">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
      What is the difference between  differences between uncontrolled and controlled components?
       </button>
     </h2>
