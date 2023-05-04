@@ -11,7 +11,7 @@ const Home_layout = () => {
     const loadingbtn=useNavigation();
     return (
      
-       <div >
+       <div style={{overflowX:"hidden"}}>
         <Header></Header>
         {/* <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
