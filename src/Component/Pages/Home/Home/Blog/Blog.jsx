@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import ReactDOM from "react-dom";
 import { useNavigation } from 'react-router-dom';
 import Pdf from "react-to-pdf";
+import Loadingbtn from '../../../Loading/Loading';
 
 const ref = React.createRef();
 const Blog = () => {
