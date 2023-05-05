@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import Receipe from '../Receipe/Receipe';
+import Loadingbtn from '../../Loading/Loading';
 
 const Home_details = () => {
     const navitgation2=useNavigation();
