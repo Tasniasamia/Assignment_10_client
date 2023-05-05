@@ -64,7 +64,7 @@ const [accept,setAccept]=useState(false);
     }
   return (
     <div className='d-flex justify-content-center'>
-    <div>
+    <div style={{width:"40%"}}>
     <h1 className='text-center'>Resister</h1>
     <form onSubmit={Resister}>
     <div className="mb-3">
